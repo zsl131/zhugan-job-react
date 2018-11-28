@@ -16,6 +16,7 @@ export default {
   effects: {
     *index({ payload: query }, { call, put }) {
       const data = yield call(objectService.list, query);
+      console.log(data)
       yield put({ type: 'modifyState', payload: { data: data.data, totalElements: data.size } });
     },
     *updateStatus ({ payload: obj }, { call }) {
@@ -27,7 +28,7 @@ export default {
   subscriptions: {
     setup({ history, dispatch }) {
       return history.listen(( location ) => {
-        if(location.pathname === "/admin/personalAuthApply") {
+        if(location.pathname === "/admin/companyAuthApply") {
           dispatch({ type: 'index', payload: location.query });
         }
       });
