@@ -6,6 +6,8 @@ export default {
     data:[],
     totalElements: 0,
     item: {},
+    uploadVisible: false,
+    playVideoVisible: false,
   },
   reducers: {
     modifyState(state, { payload: options }) {
