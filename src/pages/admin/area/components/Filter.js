@@ -31,6 +31,12 @@ const Filter = ({
         {getFieldDecorator("countyName_like")(<Input placeholder="县"/>)}
     </FormItem>
     <FormItem>
+        {getFieldDecorator("adminName_like")(<Input placeholder="姓名"/>)}
+    </FormItem>
+    <FormItem>
+        {getFieldDecorator("adminPhone_like")(<Input placeholder="手机号码"/>)}
+    </FormItem>
+    <FormItem>
         {getFieldDecorator("status")(
             <Select placeholder="状态" style={{ width: '100px' }}>
                 <Option key="*">=全部=</Option>

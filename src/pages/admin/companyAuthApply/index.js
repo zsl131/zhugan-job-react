@@ -70,7 +70,7 @@ const CompanyAuthApply = ({
   return(
     <div>
       <div className="listHeader">
-        <h3><Icon type="bars"/> 个人身份认证管理<b>（{companyAuthApply.totalElements}）</b></h3>
+        <h3><Icon type="bars"/> 单位身份认证管理<b>（{companyAuthApply.totalElements}）</b></h3>
         {/*<Operator {...operatorOpts}/>*/}
       </div>
       <div className="listFilter">

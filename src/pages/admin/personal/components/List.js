@@ -23,7 +23,7 @@ const List = ({
     render: (record) => {
       return (
         <div>
-          <p>{record.nickname}</p>
+          <p>{record.nickname}-{record.areaName?record.areaName:"未设置区域"}</p>
           <p>{record.tags}</p>
         </div>
       )

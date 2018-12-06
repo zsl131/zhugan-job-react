@@ -28,6 +28,9 @@ const Filter = ({
         {getFieldDecorator("phone_like")(<Input placeholder="电话"/>)}
       </FormItem>
     <FormItem>
+        {getFieldDecorator("areaName_like")(<Input placeholder="区域"/>)}
+    </FormItem>
+    <FormItem>
         {getFieldDecorator("status")(
             <Select placeholder="状态" style={{ width: '100px' }}>
                 <Option key="*">=全部=</Option>
